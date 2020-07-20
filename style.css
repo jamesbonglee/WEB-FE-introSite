@@ -14,6 +14,7 @@
   --color-blue: #73aace;
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
+  --color-light-orange: #ffcc80;
   --color-black: #000000;
 
   /* Font size */
@@ -407,4 +408,26 @@ justify-content: center;
 
 .testimonial__speech-bubble a {
   color: var(--color-orange);
+}
+
+/* Contact */
+#contact{
+  background-color: var(--color-light-orange);
+}
+.contact__title, .contact__email, .contact__rights{
+  color: var(--color-white);
+}
+.contact__title{
+  margin: 32px 0;
+}
+.contact__links{
+  font-size: var(--font-large);
+  margin: 12px 0;
+
+
+}
+.contact__links i:hover{
+  color: var(--color-dark-grey); 
+  transform: scale(1.15);
+  transition: var(--animation-duration) ease-in;
 }
