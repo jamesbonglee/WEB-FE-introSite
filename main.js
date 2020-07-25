@@ -21,7 +21,16 @@ navbarmenu.addEventListener("click", event => {
     return;
   }
 
-  console.log(event.target.dataset.link);
-  const scrolltTo = document.querySelector(link);
-  scrolltTo.scrollIntoView({ behavior: "smooth", block: "center" });
+  scrollIntoView(link);
 });
+//home__contact handle on [contact me] btn on home
+const homecontacme = document.querySelector(".home__contact");
+homecontacme.addEventListener("click", event => {
+  scrollIntoView("#contact");
+});
+
+// 쉽게 스크롤 메소드
+function scrollIntoView(selector) {
+  const scrolltTo = document.querySelector(selector);
+  scrolltTo.scrollIntoView({ behavior: "smooth", block: "center" });
+}
