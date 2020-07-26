@@ -29,6 +29,13 @@ homecontacme.addEventListener("click", event => {
   scrollIntoView("#contact");
 });
 
+// Make home slowly fade
+const home = document.querySelector(".home__container");
+const homeHeight = home.getBoundingClientRect().height;
+document.addEventListener("scroll", () => {
+  home.style.opacity = 1 - window.scrollY / homeHeight;
+});
+
 // 쉽게 스크롤 메소드
 function scrollIntoView(selector) {
   const scrolltTo = document.querySelector(selector);
