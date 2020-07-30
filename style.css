@@ -110,14 +110,14 @@ p {
   z-index: 1;
 }
 
+
+#navbar.navbar__dark{
+  background-color: var(--color-background);
+  padding: 16px;
+}
 .navbar__menu {
   display: flex;
 }
-#navbar.navbar__dark{
-  background-color: var(--color-background);
-  padding: 8px;
-}
-
 .navbar__logo {
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
@@ -387,7 +387,7 @@ transition: all var(--animation-duration)ease-out;
 }
 
 .project__description h3{
-  color: var(--color-white)
+  color: var(--color-orange)
 }
 
 .project__description h3::after{
@@ -395,11 +395,11 @@ transition: all var(--animation-duration)ease-out;
   display: block;
   position: relative;
   left: 50%;
-  width: 25px;
+  width: 70px;
   height: 2px;
   background-color: var(--color-dark-white);
   margin-top: 8px;
-  margin-left: -12px;
+  transform: translateX(-50%);
 }
 
 /* Testimonial */
@@ -495,13 +495,19 @@ transition: all var(--animation-duration)ease-out;
   #navbar {
     flex-direction: column;
     align-items: flex-start;
+    background-color: var(--color-background);
   }
+
   .navbar__menu{
     flex-direction: column;
     text-align: center;
     width: 100%;
     display: none;
   }
+.navbar__menu.open{
+  display: block;
+}
+
   .about__majors{
     flex-direction: column;
   
