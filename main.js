@@ -92,5 +92,5 @@ workBtnContainer.addEventListener("click", e => {
 // 쉽게 스크롤 메소드
 function scrollIntoView(selector) {
   const scrolltTo = document.querySelector(selector);
-  scrolltTo.scrollIntoView({ behavior: "smooth", block: "center" });
+  scrolltTo.scrollIntoView({ behavior: "smooth" });
 }
