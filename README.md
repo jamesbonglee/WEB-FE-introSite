@@ -1,2 +1,3 @@
-# portfolio
- JBong's frontend
+# portfolio site
+
+JBong's Site
